@@ -94,6 +94,17 @@ export enum FilterType {
      * ```
      */
     attribute = "attribute",
+    /**
+     * @description
+     * Filter on the category of the entity.
+     * @example
+     * ```yaml
+     * - type: entity_category
+     *   comparator: equal
+     *   value: diagnostic
+     * ```
+     */
+    entity_category = "entity_category",
 }
 
 export enum Comparator {

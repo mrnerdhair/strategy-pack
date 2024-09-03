@@ -407,6 +407,13 @@ These are the options for filter type.
   value: sensor.test123
 </pre>
       </td></tr>
+    <tr><td>entity_category</td><td>Filter on the category of the entity.</td><td>
+        <pre>
+- type: entity_category
+  comparator: equal
+  value: diagnostic
+</pre>
+      </td></tr>
     <tr><td>integration</td><td>Filter on the integration of the entity.</td><td>
         <pre>
 - type: integration

@@ -110,4 +110,8 @@ export const filterValue: Record<FilterType, (entity: EntityRegistryEntry, hass:
                 throw Error("value is not defined correctly");
             }
         },
+        entity_category: (entity, hass, value, comparator) => {
+            const entityCategory = entity.entity_category;
+            return compare(comparator, entityCategory, value);
+        },
     };
